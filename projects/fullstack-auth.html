@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Full-Stack Site with Auth — Arjun Sagar Dhunna</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400..900;1,400..900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<nav>
+  <a href="../index.html" class="brand"><span class="mark"></span> AS Dhunna</a>
+  <div class="right">
+    <span class="lang">EN</span>
+    <a href="../index.html#contact" class="talk">Let's talk</a>
+    <span class="menu"><i></i><i></i></span>
+  </div>
+</nav>
+
+<main class="project-page">
+  <div class="wrap">
+    <a href="../index.html#work" class="back-link"><span class="arr">←</span> Back to work</a>
+
+    <div class="project-hero">
+      <div class="glow"></div>
+      <span class="num-big">01</span>
+      <h1>Full-Stack Site<br><span class="out">with Auth</span></h1>
+      <p class="lead">A website with real user accounts — registration, login/logout, and activity logging. Built on client sessions and MongoDB for data persistence, with passwords securely hashed using bcrypt.js instead of stored as plain text.</p>
+
+      <div class="project-meta">
+        <div class="item"><div class="lbl">Year</div><div class="val">April 2023</div></div>
+        <div class="item"><div class="lbl">Role</div><div class="val">Creator · Designer · Developer</div></div>
+        <div class="item"><div class="lbl">Type</div><div class="val">Full-stack web app</div></div>
+        <div class="item"><div class="lbl">Status</div><div class="val">Completed</div></div>
+      </div>
+    </div>
+
+    <div class="project-content">
+      <h2>Overview</h2>
+      <div class="body">
+        <p>This project was the culmination of my web development work — taking everything from sessions to databases to security and pulling it together into a working site where users could actually have accounts.</p>
+        <p>The site handles the full lifecycle of a user account: <b>signing up</b>, <b>signing back in</b>, <b>signing out</b>, and tracking what happens along the way with logging. Behind the scenes, MongoDB stores user records and bcrypt.js makes sure passwords are never readable, even if the database were exposed.</p>
+      </div>
+    </div>
+
+    <div class="project-content" style="border-top:1px solid var(--line);padding-top:60px">
+      <h2>Features</h2>
+      <div class="body">
+        <ul class="feature-list">
+          <li>User registration with form validation and persistent records in MongoDB.</li>
+          <li>Login and logout flows using client sessions for stateful authentication.</li>
+          <li>Activity logging that tracks user actions for visibility and debugging.</li>
+          <li>Password security using bcrypt.js hashing instead of plain-text storage.</li>
+          <li>Clean front-end built with CSS and JavaScript, designed for clarity.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="project-content" style="border-top:1px solid var(--line);padding-top:60px">
+      <h2>Tech Stack</h2>
+      <div class="body">
+        <div class="tags-row">
+          <span class="tag-pill">JavaScript</span>
+          <span class="tag-pill">CSS</span>
+          <span class="tag-pill">MongoDB</span>
+          <span class="tag-pill">bcrypt.js</span>
+          <span class="tag-pill">Sessions</span>
+          <span class="tag-pill">Node.js</span>
+        </div>
+        <p style="margin-top:24px">This project gave me hands-on experience with the security side of full-stack development — understanding why password hashing matters, how session state actually works under the hood, and how to model persistent user data.</p>
+      </div>
+    </div>
+
+    <div class="project-nav">
+      <a href="../index.html#work" class="prev">
+        <span class="nav-lbl">← All projects</span>
+        <span class="nav-title">Back to portfolio</span>
+      </a>
+      <a href="dog-grooming.html" class="next">
+        <span class="nav-lbl">Next project →</span>
+        <span class="nav-title">Dog Grooming Application</span>
+      </a>
+    </div>
+  </div>
+</main>
+
+<!-- mobile menu drawer -->
+<div class="mobile-drawer" id="drawer">
+  <button class="close" aria-label="close">✕</button>
+  <ul>
+    <li><a href="../index.html#about">About</a></li>
+    <li><a href="../index.html#skills">Skills</a></li>
+    <li><a href="../index.html#work">Work</a></li>
+    <li><a href="../index.html#experience">Experience</a></li>
+    <li><a href="../index.html#education">Education</a></li>
+    <li><a href="../index.html#contact">Contact</a></li>
+  </ul>
+  <div class="meta">arjuncad02@gmail.com · +1 (647) 866-4489</div>
+</div>
+
+<script src="../main.js"></script>
+</body>
+</html>
