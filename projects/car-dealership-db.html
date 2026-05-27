@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Car Dealership Database — Arjun Sagar Dhunna</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400..900;1,400..900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<nav>
+  <a href="../index.html" class="brand"><span class="mark"></span> AS Dhunna</a>
+  <div class="right">
+    <span class="lang">EN</span>
+    <a href="../index.html#contact" class="talk">Let's talk</a>
+    <span class="menu"><i></i><i></i></span>
+  </div>
+</nav>
+
+<main class="project-page">
+  <div class="wrap">
+    <a href="../index.html#work" class="back-link"><span class="arr">←</span> Back to work</a>
+
+    <div class="project-hero">
+      <div class="glow"></div>
+      <span class="num-big">03</span>
+      <h1>Car Dealership<br><span class="out">Database</span></h1>
+      <p class="lead">A relational database that ties vehicles, customers, orders, and payment history into one interrelated system. Modeled with an ER diagram, then implemented as a normalized SQL schema where every record connects cleanly to the next.</p>
+
+      <div class="project-meta">
+        <div class="item"><div class="lbl">Year</div><div class="val">August 2022</div></div>
+        <div class="item"><div class="lbl">Role</div><div class="val">Creator · Implementer</div></div>
+        <div class="item"><div class="lbl">Type</div><div class="val">Database / Schema</div></div>
+        <div class="item"><div class="lbl">Status</div><div class="val">Completed</div></div>
+      </div>
+    </div>
+
+    <div class="project-content">
+      <h2>Overview</h2>
+      <div class="body">
+        <p>The scenario was simple in description but rich in detail: build a database that captures a dealership's entire operation. Vehicles on the lot, customers walking in, orders being placed, payments tracked over time — all of it linked together so nothing falls out of sync.</p>
+        <p>I started with an <b>entity-relationship diagram</b> to map the world, then translated that into a normalized schema where each table had a clear purpose and foreign keys did the work of holding everything together.</p>
+      </div>
+    </div>
+
+    <div class="project-content" style="border-top:1px solid var(--line);padding-top:60px">
+      <h2>Schema</h2>
+      <div class="body">
+        <ul class="feature-list">
+          <li><b>Vehicle</b> — vehicle name, vehicle ID, vehicle price.</li>
+          <li><b>Customer</b> — first name, last name, address line 1, address line 2, city, postal code, phone number.</li>
+          <li><b>Order Info</b> — order ID, customer ID, employee ID, vehicle ID, payment amount.</li>
+          <li><b>Payment History</b> — payment ID, employee ID, customer ID.</li>
+          <li>Foreign keys linking customers to their orders, and orders to the vehicles and payments they involve.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="project-content" style="border-top:1px solid var(--line);padding-top:60px">
+      <h2>Tech Stack</h2>
+      <div class="body">
+        <div class="tags-row">
+          <span class="tag-pill">SQL</span>
+          <span class="tag-pill">RDBMS</span>
+          <span class="tag-pill">ER Diagram</span>
+          <span class="tag-pill">Schema Design</span>
+          <span class="tag-pill">Normalization</span>
+        </div>
+        <p style="margin-top:24px">This project drilled home why <b>data modeling matters before code does</b>. A well-designed schema makes queries simple; a sloppy one makes everything painful. ER diagrams aren't optional — they're the blueprint.</p>
+      </div>
+    </div>
+
+    <div class="project-nav">
+      <a href="dog-grooming.html" class="prev">
+        <span class="nav-lbl">← Previous</span>
+        <span class="nav-title">Dog Grooming Application</span>
+      </a>
+      <a href="java-calculator.html" class="next">
+        <span class="nav-lbl">Next project →</span>
+        <span class="nav-title">Java Calculator (GUI)</span>
+      </a>
+    </div>
+  </div>
+</main>
+
+<!-- mobile menu drawer -->
+<div class="mobile-drawer" id="drawer">
+  <button class="close" aria-label="close">✕</button>
+  <ul>
+    <li><a href="../index.html#about">About</a></li>
+    <li><a href="../index.html#skills">Skills</a></li>
+    <li><a href="../index.html#work">Work</a></li>
+    <li><a href="../index.html#experience">Experience</a></li>
+    <li><a href="../index.html#education">Education</a></li>
+    <li><a href="../index.html#contact">Contact</a></li>
+  </ul>
+  <div class="meta">arjuncad02@gmail.com · +1 (647) 866-4489</div>
+</div>
+
+<script src="../main.js"></script>
+</body>
+</html>
